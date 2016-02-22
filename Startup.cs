@@ -5,7 +5,7 @@ using Nancy;
 using Nancy.ViewEngines.Razor;
 using System.Collections.Generic;
 
-namespace TemplateProject
+namespace ToDoList
 {
   public class Startup
   {
@@ -37,5 +37,9 @@ namespace TemplateProject
     {
       get { return false; }
     }
+  }
+  public static class DBConfiguration
+  {
+      public static string ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=todo;Integrated Security=SSPI;";
   }
 }
